@@ -6,7 +6,7 @@ import os
 from flask import Flask, session, g
 from config import config
 from models import db
-
+app = Flask(__name__)
 
 def create_app(config_name=None):
     """
@@ -147,8 +147,3 @@ def migrate_json_to_db():
 # 创建应用实例
 app = create_app()
 
-
-if __name__ == '__main__':
-    # 从环境变量获取调试模式设置
-    debug_mode = os.environ.get('DEBUG', 'True').lower() == 'true'
-    app.run(debug=debug_mode)
