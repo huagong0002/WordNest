@@ -2,3 +2,7 @@ flask==2.2.5
 Flask-SQLAlchemy==3.0.3
 werkzeug==2.2.3
 pyttsx3
+Flask
+Flask-SQLAlchemy
+# 如果代码里有 import requests，也要加上：
+requests
